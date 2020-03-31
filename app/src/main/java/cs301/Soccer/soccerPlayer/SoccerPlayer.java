@@ -45,6 +45,22 @@ public class SoccerPlayer {
         redCards = 0;
     }
 
+    public String serialize() {
+        return firstName + "#" +
+                lastName + "#" +
+                uniformNum + "#" +
+                teamName + "#" +
+                goalsScored + "#" +
+                assists + "#" +
+                shots + "#" +
+                fouls + "#" +
+                saves + "#" +
+                yellowCards + "#" +
+                redCards;
+    }
+
+
+
     // "get methods"
     public String getFirstName() {
         return firstName;
